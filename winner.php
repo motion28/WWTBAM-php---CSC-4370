@@ -1,3 +1,6 @@
+<style>
+<?php include 'winner.css'; ?>
+</style>
 <?php
 	 $score='Score';
 	 setcookie($score);
@@ -12,14 +15,17 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<title>Who Wants to Be a Millionaire </title>
-	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="winner.css" />
 </head>
 <body>
 	<?php
 		$money= ++$_COOKIE['Score']+999999;
 		echo "
-			<div>
-					<h1> Congratulations! You Have Won! </h1>
+			<img src=\"logo.png\">
+			<div class=\"winner\">
+				
+					<h1 > Congratulations! You Have Won! </h1>
+					<br>
 					<h3> Amount Earned </h3>
 					<h3> $$money</h3>
 			</div>

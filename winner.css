@@ -1,0 +1,44 @@
+
+body{
+    background-position:center ;
+      background-image: url("galaxy.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      overflow: hidden;
+      width: 100%;
+      min-height: 100vh;
+      color: gold;
+      
+  }
+
+.winner{
+  position: relative;
+  top: 50%;
+  left: 30%;
+  transform: translate(0, -50%);
+  border:transparent;
+  padding: 10px;
+}
+img{
+  top: 150px;
+  left: 500px;
+  height: 180px;
+  width: 180px;
+  position: absolute;
+  align-self: center;
+
+  animation: animateOne linear 6s infinite;
+  z-index: 2;
+
+}
+@keyframes animateOne
+{
+  0%
+{
+  transform: translate(-50%,-50%) rotate(0deg);
+}  100%
+{
+  transform: translate(-50%,-50%) rotate(160deg);
+}
+}

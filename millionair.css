@@ -19,11 +19,7 @@ body{
     background: linear-gradient( -45deg,#5831b4, #6720a1,#610a83,#5e014e4b );
     border-radius: 10px;
 }
- img{
-    
-    
-    
-}
+  
 
 img{
     top: 100px;
@@ -134,5 +130,6 @@ button :hover{
 .signup_link a:hover{
     text-decoration: underline;
 }
+
 
 

@@ -7,6 +7,7 @@ body{
       overflow: hidden;
       width: 100%;
       margin: 0 auto;
+     
     
   }
   h1{
@@ -27,7 +28,7 @@ body{
   }
 .questionA{
     position: absolute;
-    top: 550px; 
+    top: 570px; 
     left: 100px;
     color: white;
     font-size: 15pt;
@@ -35,7 +36,7 @@ body{
 }
 .questionB{
     position: absolute;
-    top: 550px; 
+    top: 570px; 
     left: 570px;
     color: white;
     font-size: 15pt;
@@ -43,7 +44,7 @@ body{
 }
 .questionC{
     position: absolute;
-    top: 600px; 
+    top: 630px; 
     left: 100px;
     color: white;
     font-size: 15pt;
@@ -51,7 +52,7 @@ body{
 }
 .questionD{
     position: absolute;
-    top: 600px; 
+    top: 630px; 
     left: 570px;
     color: white;
     font-size: 15pt;

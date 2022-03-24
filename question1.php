@@ -69,12 +69,12 @@
 			
 			<div>
 				<div>
-					<p> <a href='wrong.html'> $a </a></p>
-					<p> <a href='question2.php'> $b </a> <p>
+					<p class =\"questionA\"> <a href='wrong.html'> $a </a></p>
+					<p class =\"questionB\"> <a href='question2.php'> $b </a> <p>
 				</div>
 				<div>
-					<p> <a href='wrong.html'> $c </a> </p>
-					<p> <a href='wrong.html'> $d </a><p>
+					<p class =\"questionC\"> <a href='wrong.html'> $c </a> </p>
+					<p class =\"questionD\"> <a href='wrong.html'> $d </a><p>
 				</div>
 			</div>
 		";
@@ -84,12 +84,12 @@
 			
 			<div>
 				<div>
-					<p> <a href='wrong.html'> $a </a></p>
-					<p> <a href='wrong.html'> $b </a> <p>
+					<p class =\"questionA\"> <a href='wrong.html'> $a </a></p>
+					<p class =\"questionB\"> <a href='wrong.html'> $b </a> <p>
 				</div>
 				<div>
-					<p> <a href='question2.php'> $c </a> </p>
-					<p> <a href='wrong.html'> $d </a><p>
+					<p class =\"questionC\"> <a href='question2.php'> $c </a> </p>
+					<p class =\"questionD\"> <a href='wrong.html'> $d </a><p>
 				</div>
 			</div>
 		";
@@ -99,12 +99,12 @@
 			
 			<div>
 				<div>
-					<p> <a href='wrong.html'> $a </a></p>
-					<p> <a href='wrong.html'> $b </a> <p>
+					<p class =\"questionA\"> <a href='wrong.html'> $a </a></p>
+					<p class =\"questionB\"> <a href='wrong.html'> $b </a> <p>
 				</div>
 				<div>
-					<p> <a href='wrong.html'> $c </a> </p>
-					<p> <a href='question2.php'> $d </a><p>
+					<p class =\"questionC\"> <a href='wrong.html'> $c </a> </p>
+					<p class =\"questionD\"> <a href='question2.php'> $d </a><p>
 				</div>
 		";
 

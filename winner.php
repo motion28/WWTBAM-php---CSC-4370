@@ -1,14 +1,14 @@
-<style>
-<?php include 'winner.css'; ?>
-</style>
 <?php
 	 $score='Score';
 	 setcookie($score);
 	 ?>
 	<?php
-		$_COOKIE['Score']=00;
+		$_COOKIE['Score']=0;
 
 	?>
+<style>
+	<?php include 'winner.css'; ?>
+</style>
 <!DOCTYPE html>
 <html lang="en">
 <head>

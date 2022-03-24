@@ -11,9 +11,6 @@ body{
     
   }
   h1{
-    position: absolute;
-    top: 450px;
-    left: 100px;
     color: white;
   }
   h3{
@@ -21,39 +18,39 @@ body{
   }
 .question{
     position: absolute;
-    top: 460px;
-    left: 280px;
+    top: 590px;
+    left: 440px;
     color: white;
     font-size: 15pt;
   }
 .questionA{
     position: absolute;
-    top: 570px; 
-    left: 100px;
+    top: 680px; 
+    left: 370px;
     color: white;
     font-size: 15pt;
     
 }
 .questionB{
     position: absolute;
-    top: 570px; 
-    left: 570px;
+    top: 680px; 
+    left: 980px;
     color: white;
     font-size: 15pt;
     
 }
 .questionC{
     position: absolute;
-    top: 630px; 
-    left: 100px;
+    top: 745px; 
+    left: 370px;
     color: white;
     font-size: 15pt;
     
 }
 .questionD{
     position: absolute;
-    top: 630px; 
-    left: 570px;
+    top: 745px; 
+    left: 980px;
     color: white;
     font-size: 15pt;
     
@@ -65,7 +62,7 @@ a:link {
     text-decoration: none;
   }
   a:visited {
-    color: grey;
+    color: white;
     background-color: transparent;
     text-decoration: none;
   }

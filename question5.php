@@ -1,14 +1,13 @@
-<style>
-<?php include 'questions.css'; ?>
-</style>
 <?php
-	 $score='Score';
-	 setcookie($score);
-	 ?>
-	<?php
-		$_COOKIE['Score']=00;
-
-	?>
+	$score='Score';
+	setcookie($score);
+?>
+<?php
+	$_COOKIE['Score']=0;
+?>
+<style>
+	<?php include 'questions.css'; ?>
+</style>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +21,7 @@
 		$money= ++$_COOKIE['Score']+24999;
 		echo "
 			<div>
-					
+					<h1> Question 5:</h1>
 					<h3> Amount Earned </h3>
 					<h3> $$money</h3>
 			</div>
@@ -44,7 +43,6 @@
 		echo "<br>";
 		echo"
 			<div>
-				<h1> Question 5:</h1>
 					<div>
 						<h3 class =\"question\"> $question </h3>
 					</div>

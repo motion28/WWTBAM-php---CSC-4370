@@ -1,14 +1,13 @@
-<style>
-<?php include 'questions.css'; ?>
-</style>
 <?php
-	 $score='Score';
-	 setcookie($score);
-	 ?>
-	<?php
-		$_COOKIE['Score']=0;
-
-	?>
+	$score='Score';
+	setcookie($score);
+?>
+<?php
+	$_COOKIE['Score']=0;
+?>
+<style>
+	<?php include 'questions.css'; ?>
+</style>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +21,7 @@
 		$money=$_COOKIE['Score'];
 		echo "
 			<div>
-					
+					<h1> Question 1:</h1>
 					<h3> Amount Earned </h3>
 					<h3> $$money</h3>
 			</div>
@@ -44,7 +43,6 @@
 		echo "<br>";
 		echo"
 			<div>
-				<h1> Question 1:</h1>
 					<div>
 						<h3 class =\"question\"> $question </h3>
 					</div>
@@ -69,12 +67,12 @@
 			
 			<div>
 				<div>
-					<p class =\"questionA\"> <a href='wrong.html'> $a </a></p>
-					<p class =\"questionB\"> <a href='question2.php'> $b </a> <p>
+					<p> <a href='wrong.html'> $a </a></p>
+					<p> <a href='question2.php'> $b </a> <p>
 				</div>
 				<div>
-					<p class =\"questionC\"> <a href='wrong.html'> $c </a> </p>
-					<p class =\"questionD\"> <a href='wrong.html'> $d </a><p>
+					<p> <a href='wrong.html'> $c </a> </p>
+					<p> <a href='wrong.html'> $d </a><p>
 				</div>
 			</div>
 		";
@@ -84,12 +82,12 @@
 			
 			<div>
 				<div>
-					<p class =\"questionA\"> <a href='wrong.html'> $a </a></p>
-					<p class =\"questionB\"> <a href='wrong.html'> $b </a> <p>
+					<p> <a href='wrong.html'> $a </a></p>
+					<p> <a href='wrong.html'> $b </a> <p>
 				</div>
 				<div>
-					<p class =\"questionC\"> <a href='question2.php'> $c </a> </p>
-					<p class =\"questionD\"> <a href='wrong.html'> $d </a><p>
+					<p> <a href='question2.php'> $c </a> </p>
+					<p> <a href='wrong.html'> $d </a><p>
 				</div>
 			</div>
 		";
@@ -99,12 +97,12 @@
 			
 			<div>
 				<div>
-					<p class =\"questionA\"> <a href='wrong.html'> $a </a></p>
-					<p class =\"questionB\"> <a href='wrong.html'> $b </a> <p>
+					<p> <a href='wrong.html'> $a </a></p>
+					<p> <a href='wrong.html'> $b </a> <p>
 				</div>
 				<div>
-					<p class =\"questionC\"> <a href='wrong.html'> $c </a> </p>
-					<p class =\"questionD\"> <a href='question2.php'> $d </a><p>
+					<p> <a href='wrong.html'> $c </a> </p>
+					<p> <a href='question2.php'> $d </a><p>
 				</div>
 		";
 

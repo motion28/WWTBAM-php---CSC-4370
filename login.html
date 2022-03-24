@@ -2,20 +2,35 @@
 <html>
 <head>
 	<title>Login</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="millionair.css">
 	<!-- To-Do: replace style.css with name of our stylesheet -->
 </head>
-<body>
-	<form action="login.php" method="post">
+<body>	
+	<img src="logo.png">
+	<div class="center">
+		
 		<h1>Login:</h1>
-		<label>Username:</label>
-		<input type="text" name="username" placeholder="Username">
-		<br>
-		<label>Password:</label>
-		<input type="password" name="password" placeholder="Password">
-		<br>
-		<button type="submit">Login!</button>
-	</form>
-	<a href="signup.html">Sign Up!</a>
+			
+		<form action="login.php" method="post">
+			<div class="txt_field">
+			
+		
+			<input type="text" name="username" >
+				<label>Username:</label>
+			</div>
+			<br>
+			<div class="txt_field">
+				
+			
+			<input type="password" name="password">
+			<label>Password:</label>
+			</div>
+			<br>
+			<button type="submit">Login!</button>
+		</form>
+		<div class="signup_link">
+			Not a member?<a href="signup.html" >Sign Up!</a>
+		</div>
+	</div>
 </body>
 </html>

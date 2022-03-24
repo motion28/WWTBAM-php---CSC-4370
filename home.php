@@ -9,6 +9,8 @@ if(isset($_SESSION['id']) && isset($_SESSION['username'])) {
 	</head>
 	<body>
 		<h1>Hello, <?php echo $_SESSION['name'];?></h1>
+		<a href="question1.php">Start the Game!</a>
+		<a href="hiscore.php">Display High Scores</a>
 		<a href="logout.php">Logout</a>
 	</body>
 	</html>

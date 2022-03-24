@@ -1,0 +1,81 @@
+body{
+    background-position:center ;
+      background-image: url("questions.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      overflow: hidden;
+      width: 100%;
+      margin: 0 auto;
+    
+  }
+  h1{
+    position: absolute;
+    top: 450px;
+    left: 100px;
+    color: white;
+  }
+  h3{
+      color: white;
+  }
+.question{
+    position: absolute;
+    top: 460px;
+    left: 280px;
+    color: white;
+    font-size: 15pt;
+  }
+.questionA{
+    position: absolute;
+    top: 550px; 
+    left: 100px;
+    color: white;
+    font-size: 15pt;
+    
+}
+.questionB{
+    position: absolute;
+    top: 550px; 
+    left: 570px;
+    color: white;
+    font-size: 15pt;
+    
+}
+.questionC{
+    position: absolute;
+    top: 600px; 
+    left: 100px;
+    color: white;
+    font-size: 15pt;
+    
+}
+.questionD{
+    position: absolute;
+    top: 600px; 
+    left: 570px;
+    color: white;
+    font-size: 15pt;
+    
+}
+
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: grey;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+    font-size: 15pts;
+  }
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }

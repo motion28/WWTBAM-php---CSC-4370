@@ -1,3 +1,6 @@
+<style>
+<?php include 'questions.css'; ?>
+</style>
 <?php
 	 $score='Score';
 	 setcookie($score);
@@ -12,7 +15,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<title>Who Wants to Be a Millionaire </title>
-	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="questions.css" />
 </head>
 <body>
 	<?php
@@ -43,20 +46,20 @@
 			<div>
 				<h1> Question 1:</h1>
 					<div>
-						<h3> $question </h3>
+						<h3 class =\"question\"> $question </h3>
 					</div>
 			</div>
 		";
 		if(strtoupper(rtrim($correct)) == strtoupper(rtrim($a))){
 			echo "			
-			<div>
-				<div>
-					<p> <a href='question2.php'> $a </a></p>
-					<p> <a href='wrong.html'> $b </a> <p>
+			<div >
+				<div >
+					<p class =\"questionA\"> <a href='question2.php'> $a </a></p>
+					<p class =\"questionB\"> <a href='wrong.html'> $b </a> <p>
 				</div>
 				<div>
-					<p> <a href='wrong.html'> $c </a> </p>
-					<p> <a href='wrong.html'> $d </a><p>
+					<p class =\"questionC\"> <a href='wrong.html'> $c </a> </p>
+					<p class =\"questionD\"> <a href='wrong.html'> $d </a><p>
 				</div>
 			</div>
 		";

@@ -11,7 +11,7 @@ if(isset($_SESSION['id']) && isset($_SESSION['username'])) {
 		<h1>Current High Scores:</h1>
 		<?php
 		include "dbconnect.php";
-		$sql = "SELECT * FROM users ORDER BY hiscore DESC;";
+		$sql = "SELECT * FROM users ORDER BY hiscore DESC LIMIT 10;";
 		$result = mysqli_query($conn, $sql);
 		
 		if (mysqli_num_rows($result) > 0) {

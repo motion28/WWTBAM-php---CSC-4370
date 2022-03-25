@@ -21,7 +21,7 @@ if(isset($_SESSION['id']) && isset($_SESSION['username'])) {
 		if (mysqli_num_rows($result) > 0) {
 			$position = 1;
 			while($row = mysqli_fetch_assoc($result)) {
-				echo nl2br($position . ". " . $row['name'] . " - " . $row['hiscore'] . "\n");
+				echo nl2br("<p>" . $position . ". " . $row['name'] . " - " . $row['hiscore'] . "\n</p>");
 				$position = $position+1;
 			}
 		} else {

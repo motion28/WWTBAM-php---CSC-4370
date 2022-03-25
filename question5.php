@@ -1,10 +1,7 @@
 <?php
-	$score='Score';
-	setcookie($score);
-?>
-<?php
-	$_COOKIE['Score']=0;
-?>
+session_start();
+if(isset($_SESSION['id']) && isset($_SESSION['username'])) {
+	?>
 <style>
 	<?php include 'questions.css'; ?>
 </style>
@@ -18,14 +15,17 @@
 </head>
 <body>
 	<?php
-		$money= ++$_COOKIE['Score']+24999;
-		echo "
+		$_SESSION["score"] = 25000;
+	?>
 			<div>
 					<h1> Question 5:</h1>
+					<h3>Player: <?php echo $_SESSION['name'];?></h3>
 					<h3> Amount Earned </h3>
-					<h3> $$money</h3>
 			</div>
-		";
+		<?php
+		 echo "<h3>" . "$" . $_SESSION['score']; "</h3>"
+		?>
+		<?php
 		$random=rand(1,3);
 		$list = fopen("questions/level5.txt", "r");
 		while($line=fgets($list)){
@@ -53,11 +53,11 @@
 			<div>
 				<div>
 					<p class =\"questionA\"> <a href='question6.php'> $a </a></p>
-					<p class =\"questionB\"> <a href='wrong.html'> $b </a> <p>
+					<p class =\"questionB\"> <a href='wrong.php'> $b </a> <p>
 				</div>
 				<div>
-					<p class =\"questionC\"> <a href='wrong.html'> $c </a> </p>
-					<p class =\"questionD\"> <a href='wrong.html'> $d </a><p>
+					<p class =\"questionC\"> <a href='wrong.php'> $c </a> </p>
+					<p class =\"questionD\"> <a href='wrong.php'> $d </a><p>
 				</div>
 			</div>
 		";
@@ -67,12 +67,12 @@
 			
 			<div>
 				<div>
-					<p class =\"questionA\"> <a href='wrong.html'> $a </a></p>
+					<p class =\"questionA\"> <a href='wrong.php'> $a </a></p>
 					<p class =\"questionB\"> <a href='question6.php'> $b </a> <p>
 				</div>
 				<div>
-					<p class =\"questionC\"> <a href='wrong.html'> $c </a> </p>
-					<p class =\"questionD\"> <a href='wrong.html'> $d </a><p>
+					<p class =\"questionC\"> <a href='wrong.php'> $c </a> </p>
+					<p class =\"questionD\"> <a href='wrong.php'> $d </a><p>
 				</div>
 			</div>
 		";
@@ -82,12 +82,12 @@
 			
 			<div>
 				<div>
-					<p class =\"questionA\"> <a href='wrong.html'> $a </a></p>
-					<p class =\"questionB\"> <a href='wrong.html'> $b </a> <p>
+					<p class =\"questionA\"> <a href='wrong.php'> $a </a></p>
+					<p class =\"questionB\"> <a href='wrong.php'> $b </a> <p>
 				</div>
 				<div>
 					<p class =\"questionC\"> <a href='question6.php'> $c </a> </p>
-					<p class =\"questionD\"> <a href='wrong.html'> $d </a><p>
+					<p class =\"questionD\"> <a href='wrong.php'> $d </a><p>
 				</div>
 			</div>
 		";
@@ -97,11 +97,11 @@
 			
 			<div>
 				<div>
-					<p class =\"questionA\"> <a href='wrong.html'> $a </a></p>
-					<p  class =\"questionB\"> <a href='wrong.html'> $b </a> <p>
+					<p class =\"questionA\"> <a href='wrong.php'> $a </a></p>
+					<p  class =\"questionB\"> <a href='wrong.php'> $b </a> <p>
 				</div>
 				<div>
-					<p class =\"questionC\"> <a href='wrong.html'> $c </a> </p>
+					<p class =\"questionC\"> <a href='wrong.php'> $c </a> </p>
 					<p class =\"questionD\"> <a href='question6.php'> $d </a><p>
 				</div>
 		";
@@ -112,3 +112,9 @@
 
 </body>
 </html>
+<?php
+} else {
+	header("Location: login.php");
+	exit();
+}
+?>

@@ -32,6 +32,25 @@ img{
   z-index: 2;
 
 }
+a {
+  color: yellow;
+}
+a:link {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+  font-size: 15pts;
+}
 @keyframes animateOne
 {
   0%

@@ -12,7 +12,7 @@ if(isset($_SESSION['id']) && isset($_SESSION['username'])) {
 		<title>Homepage</title>
 	</head>
 	<body>
-		<h1>Hello, <?php echo $_SESSION['name'];?></h1>
+		<h1 class ="list">Hello, <?php echo $_SESSION['name'];?></h1>
 	<div class="bubble">	<a href="question1.php">Start the Game!</a></div><br>
 	<div class="bubble">	<a href="hiscore.php">Display High Scores</a></div><br>
 	<div class="bubble">	<a href="logout.php">Logout</a></div><br>

@@ -21,14 +21,14 @@ if(isset($_SESSION['id']) && isset($_SESSION['username'])) {
 		if (mysqli_num_rows($result) > 0) {
 			$position = 1;
 			while($row = mysqli_fetch_assoc($result)) {
-				echo nl2br("<p>" . $position . ". " . $row['name'] . " - " . $row['hiscore'] . "\n</p>");
+				echo nl2br("<p class =\"list\">" . $position . ". " . $row['name'] . " - " . $row['hiscore'] . "\n</p>");
 				$position = $position+1;
 			}
 		} else {
 			echo "No high scores set atm.";
 		}
 		?>
-	<p>	<a href="home.php">Return to Homepage</a></p>
+	<p class ="list">	<a href="home.php">Return to Homepage</a></p>
 	</body>
 	</html>
 	<?php

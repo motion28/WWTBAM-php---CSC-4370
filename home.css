@@ -23,7 +23,7 @@ body{
     height: 100px;
     border-style: solid;
     border-color: gold;
-    background-color: blueviolet;
+   
     border-width: 20px;
     align-self: center;
     font-size: 20px;
@@ -41,4 +41,18 @@ a:hover{
   
     border-color: #d99126;
     transition: .5s;
+}
+p{
+    width: 100px;
+    border-style: solid;
+    border-color: gold;
+    border-width: 8px;
+    border-radius: 30%;
+    padding-top: 40px;
+    color: white;
+     position: relative;
+  align-self: center;
+  left: 450px;
+  text-align: center;
+  padding-bottom: 10px;
 }

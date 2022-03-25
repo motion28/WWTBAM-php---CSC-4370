@@ -5,6 +5,10 @@ if(isset($_SESSION['id']) && isset($_SESSION['username'])) {
 	<!DOCTYPE html>
 	<html>
 	<head>
+	<style>
+	<?php include 'home.css'; ?>
+</style>
+	<link rel="stylesheet" href="home.css" />
 		<title>Homepage</title>
 	</head>
 	<body>
@@ -24,7 +28,7 @@ if(isset($_SESSION['id']) && isset($_SESSION['username'])) {
 			echo "No high scores set atm.";
 		}
 		?>
-		<a href="home.php">Return to Homepage</a>
+	<p>	<a href="home.php">Return to Homepage</a></p>
 	</body>
 	</html>
 	<?php
